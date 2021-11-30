@@ -1,2 +1,2 @@
-say_hello:
-	echo "Hello World";
+brain-games:
+	node bin/brain-games.js
