@@ -8,7 +8,7 @@ export const brainEven = () => {
     function getRndInteger(min, max) {
          return Math.floor(Math.random() * (max - min) ) + min;
     }
-    let number = getRndInteger(0,100);
+    let number = getRndInteger(0,10000);
     
     const question = ('Question: ' + `${number}`);
     
@@ -30,6 +30,8 @@ export const brainEven = () => {
                 return false;
                 
             } 
+
+            
         }
         if (number % 2 !== 0) {
     
@@ -46,6 +48,8 @@ export const brainEven = () => {
     
             } 
         }
+        console.log ('Let\'s try again, ' + name + '!');
+        return false;
     
 }
 
@@ -53,18 +57,19 @@ let i = 0;
 while (i < 3) {
 
     const result = brainEven();
-    //brainEven()
     //console.log('counter',i);
     if (result === true) {
         i++;
         //console.log('counter++',i);
         //continue;
+        if (i === 3) {
+            console.log('Congratulations, ' + name + '!');
+        }
     }
-    
+
     if (result === false) {
         //console.log('yes, its happening');
-        i = 0;
+        break;
         //console.log('final i',i);
     }
 }
-console.log('Congratulations, ' + name + '!');
