@@ -1,22 +1,15 @@
 import readlineSync from 'readline-sync';
 import {hi} from '../src/cli.js';
+import {userQuestion,userAnswer} from "../src/index.js"
 
 const name = hi();
 
 export const brainEven = () => {
     
-    function getRndInteger(min, max) {
-         return Math.floor(Math.random() * (max - min) ) + min;
-    }
-    let number = getRndInteger(0,10000);
-    
-    const question = ('Question: ' + `${number}`);
-    
-    console.log(question);
-    
-    const answer = readlineSync.question('Your answer: ');
-        
-        if (number % 2 === 0) {
+    let randomNumber = userQuestion();    
+    const answer = userAnswer();
+       
+        if (randomNumber % 2 === 0) {
     
             if (answer === 'yes'){
     
@@ -33,7 +26,7 @@ export const brainEven = () => {
 
             
         }
-        if (number % 2 !== 0) {
+        if (randomNumber % 2 !== 0) {
     
             if (answer === 'yes'){
     
