@@ -1,3 +1,5 @@
 import {randomNumber,userQuestion,userAnswer} from "../src/index.js"
 
-userQuestion();
+const number = userQuestion();
+console.log(number);
+userAnswer();

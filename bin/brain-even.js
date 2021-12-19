@@ -6,10 +6,10 @@ const name = hi();
 
 export const brainEven = () => {
     
-    let randomNumber = userQuestion();    
+    const number = userQuestion();    
     const answer = userAnswer();
        
-        if (randomNumber % 2 === 0) {
+        if (number % 2 === 0) {
     
             if (answer === 'yes'){
     
@@ -26,7 +26,7 @@ export const brainEven = () => {
 
             
         }
-        if (randomNumber % 2 !== 0) {
+        if (number % 2 !== 0) {
     
             if (answer === 'yes'){
     
