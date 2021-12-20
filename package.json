@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Rjkec/frontend-project-lvl1#readme",
   "dependencies": {
+    "@hexlet/pairs": "^1.1.1",
     "lodash": "^4.17.21",
     "makefile": "^0.0.2"
   },

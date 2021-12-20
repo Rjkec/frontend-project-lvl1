@@ -3,8 +3,8 @@ import readlineSync from 'readline-sync';
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 }   
-const randomNumber = () => { 
-    const number = getRndInteger(0,10000);
+export const randomNumber = () => { 
+    const number = getRndInteger(0,10);
     return number;
 }
 export const userQuestion = () => { 

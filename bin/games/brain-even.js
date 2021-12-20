@@ -1,16 +1,16 @@
 import readlineSync from 'readline-sync';
-import {hi} from '../src/cli.js';
-import {userQuestion,userAnswer} from "../src/index.js"
+import {hi} from '../../src/cli.js';
+import {userQuestion,userAnswer} from "../../src/index.js"
 
 const name = hi();
-
+console.log ('Answer "yes" if the number is even, otherwise answer "no".');
 export const brainEven = () => {
     
     const number = userQuestion();    
     const answer = userAnswer();
        
         if (number % 2 === 0) {
-    
+            
             if (answer === 'yes'){
     
                 console.log('Correct!');
