@@ -1,8 +1,10 @@
 import {
     cons, car, cdr, toString, isPair,
-  } from '@hexlet/pairs';
-import { hi } from '../src/cli.js';
-import {randomNumber,userQuestion,userAnswer} from "../src/index.js"
+} from '@hexlet/pairs';
+import { hi } from '../../src/cli.js';
+import {
+    randomNumber,userQuestion,userAnswer
+    } from "../../src/index.js"
 
 const name = hi();
 console.log('What is the result of the expression?');
@@ -92,7 +94,7 @@ while (i < 3) {
     
     if (result === true) {
         i++;
-        console.log('counter++',i);
+        //console.log('counter++',i);
         //continue;
         if (i === 3) {
             console.log('Congratulations, ' + name + '!');

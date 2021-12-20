@@ -3,13 +3,20 @@ import {
     cons, car, cdr, toString, isPair,
   } from '@hexlet/pairs';
   
-const pair = cons(3, 5);
+  const egcd = (a, b) => {
 
-isPair(pair); // true
+    if (a === 0)
+        return b;
 
-car(pair); // 3
-cdr(pair); // 5
+    while (b !== 0) {
+        if (a > b) {
+            a = a - b;
+        }
+        else
+            b = b - a;
+    }
 
-toString(pair); // (3, 5)
+    return a;
+}
 
-console.log(car(pair) + cdr(pair));
+console.log(egcd(52,10));
