@@ -4,7 +4,7 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 }   
 export const randomNumber = () => { 
-    const number = getRndInteger(0,10);
+    const number = getRndInteger(0,100);
     return number;
 }
 export const userQuestion = () => { 

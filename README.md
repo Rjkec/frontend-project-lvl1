@@ -12,3 +12,6 @@
 
 ## Asciinema record brain-gcd
 [![asciicast](https://asciinema.org/a/ANDTGodfHjQttZRz1ObEUzkus.svg)](https://asciinema.org/a/ANDTGodfHjQttZRz1ObEUzkus)
+
+## Asciinema record brain-prime
+[![asciicast](https://asciinema.org/a/nGjVEvnxgkf7KgjwIff9Oz3gV.svg)](https://asciinema.org/a/nGjVEvnxgkf7KgjwIff9Oz3gV)
