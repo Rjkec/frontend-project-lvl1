@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {
     cons, car, cdr, toString, isPair,
     } from '@hexlet/pairs';
