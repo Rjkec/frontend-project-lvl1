@@ -1,5 +1,3 @@
-brain-test:
-	node bin/brain-test.js
 brain-games:
 	node bin/brain-games.js
 brain-even:
