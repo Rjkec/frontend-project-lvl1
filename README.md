@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/Rjkec/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Rjkec/frontend-project-lvl1/actions)
 
 ## Manualability
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/7ef5fd0e6bb2463f3ae1/maintainability)](https://codeclimate.com/github/Rjkec/frontend-project-lvl1/maintainability)
 
 ## Make lint 
 [![make lint](https://github.com/Rjkec/frontend-project-lvl1/actions/workflows/workflows.yml/badge.svg)](https://github.com/Rjkec/frontend-project-lvl1/actions/workflows/workflows.yml)
