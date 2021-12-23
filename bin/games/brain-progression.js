@@ -14,7 +14,7 @@ const brainProgression = () => {
     const startOfProgression = randomNumber();
     let progression = [startOfProgression];
 
-    for (let i = 1; progression.length < 5; i++) {
+    for (let i = 1; progression.length < 10; i++) {
 
         progression[i] = stepOfProgression + progression[i-1]; 
         // console.log(progression[i]); 
@@ -23,7 +23,7 @@ const brainProgression = () => {
     function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
     }   
-    const randomNum = getRndInteger(0,5);
+    const randomNum = getRndInteger(0,10);
     
     const saveProgression = progression[randomNum];
     progression[randomNum] = `..`;
