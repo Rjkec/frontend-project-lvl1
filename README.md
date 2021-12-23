@@ -7,14 +7,17 @@
 ## Make lint 
 [![make lint](https://github.com/Rjkec/frontend-project-lvl1/actions/workflows/workflows.yml/badge.svg)](https://github.com/Rjkec/frontend-project-lvl1/actions/workflows/workflows.yml)
 
-## Asciinema record brain-even
+## Brain-even
 [![asciicast](https://asciinema.org/a/djp6R7SfibpmVMDvTXkSd9ZcE.svg)](https://asciinema.org/a/djp6R7SfibpmVMDvTXkSd9ZcE)
 
-## Asciinema record brain-calc
+## Brain-calc
 [![asciicast](https://asciinema.org/a/Oq2YCPdYXkdJwPCt7V0ZENT8G.svg)](https://asciinema.org/a/Oq2YCPdYXkdJwPCt7V0ZENT8G)
 
-## Asciinema record brain-gcd
+## Brain-gcd
 [![asciicast](https://asciinema.org/a/ANDTGodfHjQttZRz1ObEUzkus.svg)](https://asciinema.org/a/ANDTGodfHjQttZRz1ObEUzkus)
 
-## Asciinema record brain-prime
+## Brain-progression
+[![asciicast](https://asciinema.org/a/JfpxpP5hbPMPVITssgv4xD4Vv.svg)](https://asciinema.org/a/JfpxpP5hbPMPVITssgv4xD4Vv)
+
+## Brain-prime
 [![asciicast](https://asciinema.org/a/nGjVEvnxgkf7KgjwIff9Oz3gV.svg)](https://asciinema.org/a/nGjVEvnxgkf7KgjwIff9Oz3gV)
