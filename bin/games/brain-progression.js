@@ -18,6 +18,7 @@ const brainProgression = () => {
 
         progression[i] = stepOfProgression + progression[i-1]; 
         // console.log(progression[i]); 
+
     }
 
     function getRndInteger(min, max) {
@@ -29,7 +30,7 @@ const brainProgression = () => {
     progression[randomNum] = `..`;
     
 
-    console.log('Question: ' + `${progression}`);  
+    console.log('Question: ' + `${progression.join(' ')}`);  
     const answer = +userAnswer();
 
     if (answer === saveProgression) {
@@ -37,7 +38,7 @@ const brainProgression = () => {
         console.log('Correct!');
         return true;
     }
-
+ 
     if (answer !== saveProgression) {
     
         console.log(`${answer}` + ' is wrong answer ;(. Correct answer was ' + `${saveProgression}`);
