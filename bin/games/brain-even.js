@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import {hi} from '../../src/cli.js';
-import {userQuestion,userAnswer} from "../../src/index.js"
+import readlineSync from "readline-sync";
+import {hi} from "../../src/cli.js";
+import {userQuestion,userAnswer} from "../../src/index.js";
 
 const name = hi();
-console.log ('Answer "yes" if the number is even, otherwise answer "no".');
+console.log ("Answer \"yes\" if the number is even, otherwise answer \"no\".");
 export const brainEven = () => {
     
     const number = userQuestion();    
@@ -12,15 +12,15 @@ export const brainEven = () => {
        
         if (number % 2 === 0) {
             
-            if (answer === 'yes'){
+            if (answer === "yes"){
     
-                console.log('Correct!');
+                console.log("Correct!");
                 return true;
             }
-            if (answer === 'no'){
+            if (answer === "no"){
     
-                console.log('no is wrong answer ;(. Correct answer was yes');
-                console.log ('Let\'s try again, ' + name + '!');
+                console.log("no is wrong answer ;(. Correct answer was yes");
+                console.log ("Let's try again, " + name + "!");
                 return false;
                 
             } 
@@ -29,23 +29,23 @@ export const brainEven = () => {
         }
         if (number % 2 !== 0) {
     
-            if (answer === 'yes'){
+            if (answer === "yes"){
     
-                console.log('yes is wrong answer ;(. Correct answer was no');
-                console.log ('Let\'s try again, ' + name + '!');
+                console.log("yes is wrong answer ;(. Correct answer was no");
+                console.log ("Let's try again, " + name + "!");
                 return false;
             }
-            if (answer === 'no'){
+            if (answer === "no"){
     
-                console.log('Correct!');
+                console.log("Correct!");
                 return true;
     
             } 
         }
-        console.log ('Let\'s try again, ' + name + '!');
+        console.log ("Let's try again, " + name + "!");
         return false;
     
-}
+};
 
 let i = 0;
 while (i < 3) {
@@ -57,7 +57,7 @@ while (i < 3) {
         //console.log('counter++',i);
         //continue;
         if (i === 3) {
-            console.log('Congratulations, ' + name + '!');
+            console.log("Congratulations, " + name + "!");
         }
     }
 

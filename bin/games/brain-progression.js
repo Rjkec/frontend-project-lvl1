@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { hi } from '../../src/cli.js';
+import { hi } from "../../src/cli.js";
 import {
     randomNumber,userQuestion,userAnswer
-    } from "../../src/index.js"
+    } from "../../src/index.js";
 
 const name = hi();
-console.log('What number is missing in the progression?');
+console.log("What number is missing in the progression?");
 
 const brainProgression = () => {
 
@@ -27,27 +27,27 @@ const brainProgression = () => {
     const randomNum = getRndInteger(0,10);
     
     const saveProgression = progression[randomNum];
-    progression[randomNum] = `..`;
+    progression[randomNum] = "..";
     
 
-    console.log('Question: ' + `${progression.join(' ')}`);  
+    console.log("Question: " + `${progression.join(" ")}`);  
     const answer = +userAnswer();
 
     if (answer === saveProgression) {
 
-        console.log('Correct!');
+        console.log("Correct!");
         return true;
     }
  
     if (answer !== saveProgression) {
     
-        console.log(`${answer}` + ' is wrong answer ;(. Correct answer was ' + `${saveProgression}`);
-        console.log ('Let\'s try again, ' + name + '!');
+        console.log(`${answer}` + " is wrong answer ;(. Correct answer was " + `${saveProgression}`);
+        console.log ("Let's try again, " + name + "!");
         return false;
         
     } 
 
-}
+};
 let i = 0;
 while (i < 3) {
 
@@ -58,7 +58,7 @@ while (i < 3) {
         //console.log('counter++',i);
         //continue;
         if (i === 3) {
-            console.log('Congratulations, ' + name + '!');
+            console.log("Congratulations, " + name + "!");
         }
     }
 

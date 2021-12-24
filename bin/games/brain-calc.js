@@ -1,67 +1,67 @@
 #!/usr/bin/env node
 import {
     cons, car, cdr, toString, isPair,
-} from '@hexlet/pairs';
-import { hi } from '../../src/cli.js';
+} from "@hexlet/pairs";
+import { hi } from "../../src/cli.js";
 import {
     randomNumber,userQuestion,userAnswer
-    } from "../../src/index.js"
+    } from "../../src/index.js";
 
 const name = hi();
-console.log('What is the result of the expression?');
+console.log("What is the result of the expression?");
 
 const brainCalc = () => {
     
     const multiply = () => {
         const pair = cons(randomNumber(), randomNumber());
-        console.log('Question: ' + `${car(pair)}` + ' * ' + `${cdr(pair)}`);  
+        console.log("Question: " + `${car(pair)}` + " * " + `${cdr(pair)}`);  
         const answer = +userAnswer();
 
             if (car(pair) * cdr(pair) === answer) {
-                console.log('Correct!');
+                console.log("Correct!");
                 return true;
             }
             if (car(pair) * cdr(pair) !== answer) {
-                console.log(`${answer}` + 'is wrong answer ;(. Correct answer was ' + `${car(pair) * cdr(pair)}`);
-                console.log('Let\'s try again, ' + `${name}` + '!');
+                console.log(`${answer}` + "is wrong answer ;(. Correct answer was " + `${car(pair) * cdr(pair)}`);
+                console.log("Let's try again, " + `${name}` + "!");
                 return false;
             }
 
-   }
+   };
 
    const plus = () => {
         const pair = cons(randomNumber(), randomNumber());
-        console.log('Question: ' + `${car(pair)}` + ' + '+ `${cdr(pair)}`);  
+        console.log("Question: " + `${car(pair)}` + " + "+ `${cdr(pair)}`);  
         const answer = userAnswer();
 
             if (car(pair) + cdr(pair) == answer) {
-                console.log('Correct!');
+                console.log("Correct!");
                 return true;
             }
 
             if (car(pair) + cdr(pair) !== answer) {
-                console.log(`${answer}` + 'is wrong answer ;(. Correct answer was ' + `${car(pair) + cdr(pair)}`);
-                console.log('Let\'s try again, ' + `${name}` + '!')
+                console.log(`${answer}` + "is wrong answer ;(. Correct answer was " + `${car(pair) + cdr(pair)}`);
+                console.log("Let's try again, " + `${name}` + "!");
                 return false;
             }
-    }
+    };
 
     const minus = () => {
         const pair = cons(randomNumber(), randomNumber());
-        console.log('Question: ' + `${car(pair)}` + ' - '+ `${cdr(pair)}`);  
+        console.log("Question: " + `${car(pair)}` + " - "+ `${cdr(pair)}`);  
         const answer = userAnswer();
 
             if (car(pair) - cdr(pair) == answer) {
-                console.log('Correct!');
+                console.log("Correct!");
                 return true;
             }
 
             if (car(pair) - cdr(pair) !== answer) {
-                console.log(`${answer}` + 'is wrong answer ;(. Correct answer was ' + `${car(pair) - cdr(pair)}`);
-                console.log('Let\'s try again, ' + `${name}` + '!')
+                console.log(`${answer}` + "is wrong answer ;(. Correct answer was " + `${car(pair) - cdr(pair)}`);
+                console.log("Let's try again, " + `${name}` + "!");
                 return false;
             }
-    }
+    };
 
     function getRndInteg(min, max) {
         return Math.floor(Math.random() * (max - min) ) + min;
@@ -69,7 +69,7 @@ const brainCalc = () => {
     const randomNum = () => { 
         const number = getRndInteg(0,3);
         return number;
-    }
+    };
 
     const operationNum = randomNum();
 
@@ -84,7 +84,7 @@ const brainCalc = () => {
     if (operationNum === 2) {
         return minus();
     }
-}
+};
 
 let i = 0;
 while (i < 3) {
@@ -98,7 +98,7 @@ while (i < 3) {
         //console.log('counter++',i);
         //continue;
         if (i === 3) {
-            console.log('Congratulations, ' + name + '!');
+            console.log("Congratulations, " + name + "!");
         }
     }
 

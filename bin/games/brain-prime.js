@@ -1,16 +1,16 @@
 #!/usr/bin/env node
-import { hi } from '../../src/cli.js';
+import { hi } from "../../src/cli.js";
 import {
     randomNumber,userQuestion,userAnswer
-    } from "../../src/index.js"
+    } from "../../src/index.js";
 
     const name = hi();
-    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+    console.log("Answer \"yes\" if given number is prime. Otherwise answer \"no\".");
     
     const brainPrime = () => {
     
         const number = randomNumber();
-        console.log('Question: ' + `${number}`);  
+        console.log("Question: " + `${number}`);  
         const answer = userAnswer();
     
         const isPrime = num => {
@@ -23,19 +23,19 @@ import {
                if(num % i === 0) return false; 
             return true;
 
-        }
+        };
 
         if (isPrime(number) === true) {
 
-            if (answer === 'yes'){
+            if (answer === "yes"){
         
-                console.log('Correct!');
+                console.log("Correct!");
                 return true;
             }
-            if (answer === 'no'){
+            if (answer === "no"){
 
-                console.log('no is wrong answer ;(. Correct answer was yes');
-                console.log ('Let\'s try again, ' + name + '!');
+                console.log("no is wrong answer ;(. Correct answer was yes");
+                console.log ("Let's try again, " + name + "!");
                 return false;
                 
             } 
@@ -44,21 +44,21 @@ import {
 
         if (isPrime(number) === false) {
 
-            if (answer === 'yes'){
+            if (answer === "yes"){
     
-                console.log('yes is wrong answer ;(. Correct answer was no');
-                console.log ('Let\'s try again, ' + name + '!');
+                console.log("yes is wrong answer ;(. Correct answer was no");
+                console.log ("Let's try again, " + name + "!");
                 return false;
             }
-            if (answer === 'no'){
+            if (answer === "no"){
     
-                console.log('Correct!');
+                console.log("Correct!");
                 return true;
     
             } 
             
         }
-    }
+    };
     
     let i = 0;
     while (i < 3) {
@@ -72,7 +72,7 @@ import {
             //console.log('counter++',i);
             //continue;
             if (i === 3) {
-                console.log('Congratulations, ' + name + '!');
+                console.log("Congratulations, " + name + "!");
             }
         }
     
