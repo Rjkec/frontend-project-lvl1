@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
 import {hi} from "../../src/cli.js";
 import {userQuestion,userAnswer} from "../../src/index.js";
 

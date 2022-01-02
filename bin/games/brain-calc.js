@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import {
-    cons, car, cdr, toString, isPair,
+    cons, car, cdr
 } from "@hexlet/pairs";
 import { hi } from "../../src/cli.js";
 import {
-    randomNumber,userQuestion,userAnswer
+    randomNumber,userAnswer
     } from "../../src/index.js";
 
 const name = hi();

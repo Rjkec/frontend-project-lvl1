@@ -6,3 +6,10 @@ rules:
   no-console: 0
   semi: [error,always]
   quotes: [error,double]
+
+env: {
+    browser: true,
+    node: true,
+  }
+
+extends: "eslint:recommended"

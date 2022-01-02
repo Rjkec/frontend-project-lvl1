@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { hi } from "../../src/cli.js";
 import {
-    randomNumber,userQuestion,userAnswer
+    randomNumber,userAnswer
     } from "../../src/index.js";
 
     const name = hi();
