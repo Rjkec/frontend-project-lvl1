@@ -12,7 +12,7 @@ console.log('Find the greatest common divisor of given numbers.');
 
 const brainGcd = () => {
   const pair = cons(randomNumber(), randomNumber());
-  console.log(`Question: ${car(pair)} + ${cdr(pair)}`);
+  console.log(`Question: ${car(pair)} ${cdr(pair)}`);
   const answer = +userAnswer();
 
   const egcd = (a, b) => {
