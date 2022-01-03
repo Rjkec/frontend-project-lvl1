@@ -25,13 +25,13 @@ const brainCalc = () => {
       console.log(`Let's try again, ${name}!`);
       return false;
     }
-    //return null; // ADD THIS JUST TO FIX LINTER
+    return null; // ADD THIS JUST TO FIX LINTER
   };
 
   const plus = () => {
     const pair = cons(randomNumber(), randomNumber());
     console.log(`Question: ${car(pair)} + ${cdr(pair)}`);
-    const answer = userAnswer();
+    const answer = +userAnswer();
 
     if (car(pair) + cdr(pair) === answer) {
       console.log('Correct!');
@@ -43,13 +43,13 @@ const brainCalc = () => {
       console.log(`Let's try again, ${name} !`);
       return false;
     }
-    //return null; // ADD THIS JUST TO FIX LINTER
+    return null; // ADD THIS JUST TO FIX LINTER
   };
 
   const minus = () => {
     const pair = cons(randomNumber(), randomNumber());
     console.log(`Question: ${car(pair)} - ${cdr(pair)}`);
-    const answer = userAnswer();
+    const answer = +userAnswer();
 
     if (car(pair) - cdr(pair) === answer) {
       console.log('Correct!');
@@ -61,7 +61,7 @@ const brainCalc = () => {
       console.log(`Let's try again, ${name}!`);
       return false;
     }
-    //return null; // ADD THIS JUST TO FIX LINTER
+    return null; // ADD THIS JUST TO FIX LINTER
   };
 
   function getRndInteg(min, max) {
@@ -86,7 +86,7 @@ const brainCalc = () => {
     return minus();
   }
 
-  //return null; // ADD THIS JUST TO FIX LINTER
+  return null; // ADD THIS JUST TO FIX LINTER
 };
 
 let i = 0;
