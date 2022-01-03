@@ -34,6 +34,7 @@ parserOptions:
 
 rules:
   no-console: 0
+  no-plusplus: ["error", { "allowForLoopAfterthoughts": true }]
   import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
     - error
     - ignorePackages

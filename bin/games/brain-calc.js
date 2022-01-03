@@ -13,7 +13,7 @@ console.log('What is the result of the expression?');
 const brainCalc = () => {
   const multiply = () => {
     const pair = cons(randomNumber(), randomNumber());
-    console.log('Question: ' + `${car(pair)}` + ' * ' + `${cdr(pair)}`);
+    console.log(`Question: ${car(pair)} * ${cdr(pair)}`);
     const answer = +userAnswer();
 
     if (car(pair) * cdr(pair) === answer) {
@@ -21,44 +21,47 @@ const brainCalc = () => {
       return true;
     }
     if (car(pair) * cdr(pair) !== answer) {
-      console.log(`${answer}` + 'is wrong answer ;(. Correct answer was ' + `${car(pair) * cdr(pair)}`);
-      console.log("Let's try again, " + `${name}` + '!');
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${car(pair) * cdr(pair)}`);
+      console.log(`Let's try again, ${name} !`);
       return false;
     }
+    return null; // ADD THIS JUST TO FIX LINTER
   };
 
   const plus = () => {
     const pair = cons(randomNumber(), randomNumber());
-    console.log('Question: ' + `${car(pair)}` + ' + ' + `${cdr(pair)}`);
+    console.log(`Question: ${car(pair)} + ${cdr(pair)}`);
     const answer = userAnswer();
 
-    if (car(pair) + cdr(pair) == answer) {
+    if (car(pair) + cdr(pair) === answer) {
       console.log('Correct!');
       return true;
     }
 
     if (car(pair) + cdr(pair) !== answer) {
-      console.log(`${answer}` + 'is wrong answer ;(. Correct answer was ' + `${car(pair) + cdr(pair)}`);
-      console.log("Let's try again, " + `${name}` + '!');
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${car(pair) + cdr(pair)}`);
+      console.log(`Let's try again, ${name} !`);
       return false;
     }
+    return null; // ADD THIS JUST TO FIX LINTER
   };
 
   const minus = () => {
     const pair = cons(randomNumber(), randomNumber());
-    console.log('Question: ' + `${car(pair)}` + ' - ' + `${cdr(pair)}`);
+    console.log(`Question: ${car(pair)} - ${cdr(pair)}`);
     const answer = userAnswer();
 
-    if (car(pair) - cdr(pair) == answer) {
+    if (car(pair) - cdr(pair) === answer) {
       console.log('Correct!');
       return true;
     }
 
     if (car(pair) - cdr(pair) !== answer) {
-      console.log(`${answer}` + 'is wrong answer ;(. Correct answer was ' + `${car(pair) - cdr(pair)}`);
-      console.log("Let's try again, " + `${name}` + '!');
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${car(pair) - cdr(pair)}`);
+      console.log(`Let's try again, ${name} !`);
       return false;
     }
+    return null; // ADD THIS JUST TO FIX LINTER
   };
 
   function getRndInteg(min, max) {
@@ -82,6 +85,8 @@ const brainCalc = () => {
   if (operationNum === 2) {
     return minus();
   }
+
+  return null; // ADD THIS JUST TO FIX LINTER
 };
 
 let i = 0;
@@ -91,6 +96,7 @@ while (i < 3) {
   // console.log('counter',i);
 
   if (result === true) {
+    /* eslint-disable no-plusplus */
     i++;
     // console.log('counter++',i);
     // continue;

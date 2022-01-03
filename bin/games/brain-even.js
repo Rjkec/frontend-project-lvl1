@@ -4,7 +4,7 @@ import { userQuestion, userAnswer } from '../../src/index.js';
 
 const name = hi();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-export const brainEven = () => {
+const brainEven = () => {
   const number = userQuestion();
   const answer = userAnswer();
 
@@ -39,6 +39,7 @@ while (i < 3) {
   const result = brainEven();
   // console.log('counter',i);
   if (result === true) {
+    /* eslint-disable no-plusplus */
     i++;
     // console.log('counter++',i);
     // continue;
