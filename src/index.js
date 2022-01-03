@@ -5,7 +5,7 @@ function getRndInteger(min, max) {
 }   
 
 export const randomNumber = () => { 
-    const number = getRndInteger(1,100);
+    const number = getRndInteger(1,10);
     return number;
 };
 export const userQuestion = () => { 

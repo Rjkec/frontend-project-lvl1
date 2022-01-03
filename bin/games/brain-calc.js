@@ -22,10 +22,10 @@ const brainCalc = () => {
     }
     if (car(pair) * cdr(pair) !== answer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${car(pair) * cdr(pair)}`);
-      console.log(`Let's try again, ${name} !`);
+      console.log(`Let's try again, ${name}!`);
       return false;
     }
-    return null; // ADD THIS JUST TO FIX LINTER
+    //return null; // ADD THIS JUST TO FIX LINTER
   };
 
   const plus = () => {
@@ -43,7 +43,7 @@ const brainCalc = () => {
       console.log(`Let's try again, ${name} !`);
       return false;
     }
-    return null; // ADD THIS JUST TO FIX LINTER
+    //return null; // ADD THIS JUST TO FIX LINTER
   };
 
   const minus = () => {
@@ -58,10 +58,10 @@ const brainCalc = () => {
 
     if (car(pair) - cdr(pair) !== answer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${car(pair) - cdr(pair)}`);
-      console.log(`Let's try again, ${name} !`);
+      console.log(`Let's try again, ${name}!`);
       return false;
     }
-    return null; // ADD THIS JUST TO FIX LINTER
+    //return null; // ADD THIS JUST TO FIX LINTER
   };
 
   function getRndInteg(min, max) {
@@ -86,7 +86,7 @@ const brainCalc = () => {
     return minus();
   }
 
-  return null; // ADD THIS JUST TO FIX LINTER
+  //return null; // ADD THIS JUST TO FIX LINTER
 };
 
 let i = 0;
