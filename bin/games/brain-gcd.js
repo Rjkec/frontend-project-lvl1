@@ -34,7 +34,7 @@ const brainGcd = () => {
   }
   if (egcd(car(pair), cdr(pair)) !== answer) {
     console.log(`${answer} is wrong answer ;(. Correct answer was ${egcd(car(pair), cdr(pair))}`);
-    console.log(`Let's try again, ${name} !`);
+    console.log(`Let's try again, ${name}!`);
     return false;
   }
   return null; // ADD THIS JUST TO FIX LINTER
