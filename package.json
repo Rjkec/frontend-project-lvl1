@@ -27,6 +27,8 @@
   "homepage": "https://github.com/Rjkec/frontend-project-lvl1#readme",
   "dependencies": {
     "@hexlet/pairs": "^1.1.1",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.4.5",
     "lodash": "^4.17.21",
     "makefile": "^0.0.2"
   },
@@ -34,8 +36,10 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-jest": "^25.3.4",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1",
     "readline-sync": "^1.4.10"
   }
 }
