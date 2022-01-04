@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { hi } from '../../src/cli.js';
+import hi from '../../src/cli.js';
 import { userQuestion, userAnswer } from '../../src/index.js';
 
 const name = hi();

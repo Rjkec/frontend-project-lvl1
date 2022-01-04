@@ -2,7 +2,7 @@
 import {
   cons, car, cdr,
 } from '@hexlet/pairs';
-import { hi } from '../../src/cli.js';
+import hi from '../../src/cli.js';
 import {
   randomNumber, userAnswer,
 } from '../../src/index.js';

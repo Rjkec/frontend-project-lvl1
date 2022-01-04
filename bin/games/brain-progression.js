@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { hi } from '../../src/cli.js';
+import hi from '../../src/cli.js';
 import {
   randomNumber, userAnswer,
 } from '../../src/index.js';
