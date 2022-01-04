@@ -20,7 +20,7 @@ const brainGcd = () => {
 
     while (b !== 0) {
       if (a > b) {
-        /* eslint no-param-reassign: ["error", { "props": false }] */
+        /* eslint-disable no-param-reassign */
         a -= b;
       } else b -= a;
     }
