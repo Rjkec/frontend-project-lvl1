@@ -12,7 +12,7 @@ const brainProgression = () => {
   // console.log('Step',stepOfProgression);
   const startOfProgression = randomNumber();
   const progression = [startOfProgression];
-
+  /* eslint-disable no-plusplus */
   for (let i = 1; progression.length < 10; i++) {
     progression[i] = stepOfProgression + progression[i - 1];
     // console.log(progression[i]);
