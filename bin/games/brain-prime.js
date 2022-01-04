@@ -9,7 +9,7 @@ console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 const brainPrime = () => {
     const number = randomNumber();
-    console.log('Question: ' + `${number}`);
+    console.log(`Question: ${number}`);
     const answer = userAnswer();
 
     const isPrime = (num) => {
@@ -44,6 +44,7 @@ const brainPrime = () => {
             return true;
         }
     }
+    return null; // ADD THIS JUST TO FIX LINTER
 };
 
 let i = 0;
@@ -53,6 +54,7 @@ while (i < 3) {
     // console.log('counter',i);
 
     if (result === true) {
+        /* eslint-disable no-plusplus */
         i++;
         // console.log('counter++',i);
         // continue;
