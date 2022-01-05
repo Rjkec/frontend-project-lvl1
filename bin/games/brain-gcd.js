@@ -2,12 +2,12 @@
 import {
   cons, car, cdr,
 } from '@hexlet/pairs';
-import hi from '../../src/cli.js';
+import greeting from '../../src/cli.js';
 import {
   randomNumber, userAnswer,
 } from '../../src/index.js';
 
-const name = hi();
+const name = greeting();
 console.log('Find the greatest common divisor of given numbers.');
 
 const brainGcd = () => {

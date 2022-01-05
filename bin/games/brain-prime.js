@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import hi from '../../src/cli.js';
+import greeting from '../../src/cli.js';
 import {
   randomNumber, userAnswer,
 } from '../../src/index.js';
 
-const name = hi();
+const name = greeting();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 const brainPrime = () => {
