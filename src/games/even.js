@@ -1,5 +1,5 @@
 import greeting from '../cli.js';
-import { userQuestion, userAnswer } from '../index.js';
+import { userQuestion, userAnswer } from '../ultis.js';
 
 const evenGame = () => {
   const name = greeting();

@@ -1,7 +1,7 @@
 import greeting from '../cli.js';
 import {
   randomNumber, userAnswer,
-} from '../index.js';
+} from '../ultis.js';
 
 const progressionGame = () => {
   const name = greeting();
