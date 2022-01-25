@@ -17,5 +17,5 @@ export const userQuestion = () => {
 };
 export const userAnswer = () => {
   const answer = readlineSync.question('Your answer: ');
-  return +answer;//add plus to try with it here
+  return +answer;// add plus to try with it here
 };

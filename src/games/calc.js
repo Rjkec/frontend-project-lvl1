@@ -2,10 +2,9 @@ import {
   cons, car, cdr,
 } from '@hexlet/pairs';
 import greeting from '../cli.js';
-import {
-  randomNumber, userAnswer,
-} from '../ultis.js';
-import playLogic from '../../src/engine.js';
+import { randomNumber } from '../ultis.js';
+import playLogic from '../engine.js';
+
 const calcGame = () => {
   const name = greeting();
   console.log('What is the result of the expression?');
@@ -33,8 +32,8 @@ const calcGame = () => {
     function getRndInteg(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
-    
-    const operationNum = getRndInteg(0, 3); //temporary change to (0,2)
+
+    const operationNum = getRndInteg(0, 3);
 
     if (operationNum === 0) {
       return multiply();
@@ -54,7 +53,7 @@ const calcGame = () => {
   let i = 0;
   while (i < 3) {
     const result = brainCalc();
-    //console.log('prove of working func',result);
+    // console.log('prove of working func',result);
     // console.log('counter',i);
     if (result === true) {
       /* eslint-disable no-plusplus */
