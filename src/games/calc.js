@@ -15,32 +15,26 @@ const calcGame = () => {
     const multiply = () => {
       console.log(`Question: ${car(pair)} * ${cdr(pair)}`);
       const question = car(pair) * cdr(pair);
-      const answer = userAnswer();
-      const result = playLogic(question,answer);
-      return result;
+      return playLogic(question);
     };
 
     const plus = () => {
       console.log(`Question: ${car(pair)} + ${cdr(pair)}`);
       const question = car(pair) + cdr(pair);
-      const answer = userAnswer();
-      const result = playLogic(question,answer);
-      return result;
+      return playLogic(question);
     };
 
     const minus = () => {
       console.log(`Question: ${car(pair)} - ${cdr(pair)}`);
       const question = car(pair) - cdr(pair);
-      const answer = userAnswer();
-      const result = playLogic(question,answer);
-      return result;
+      return playLogic(question);
     };
 
     function getRndInteg(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     
-    const operationNum = getRndInteg(2, 3); //temporery change to (0,2)
+    const operationNum = getRndInteg(0, 3); //temporary change to (0,2)
 
     if (operationNum === 0) {
       return multiply();
