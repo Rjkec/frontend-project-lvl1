@@ -3,7 +3,7 @@ import {
 } from '@hexlet/pairs';
 import greeting from '../cli.js';
 import {
-  randomNumber, userAnswer,
+  randomNumber, userAnswerAsNumber,
 } from '../ultis.js';
 
 const gcdGame = () => {
@@ -13,7 +13,7 @@ const gcdGame = () => {
   const brainGcd = () => {
     const pair = cons(randomNumber(), randomNumber());
     console.log(`Question: ${car(pair)} ${cdr(pair)}`);
-    const answer = +userAnswer();
+    const answer = userAnswerAsNumber();
 
     const egcd = (a, b) => {
       if (a === 0) return b;

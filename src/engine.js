@@ -1,5 +1,4 @@
-const playLogic = (qestion,answer) => {
-  
+const playLogic = (qestion, answer) => {
   if (qestion === answer) {
     console.log('Correct!');
     return true;
