@@ -15,7 +15,11 @@ export const userQuestion = () => {
   console.log(question);
   return number;
 };
-export const userAnswer = () => {
+export const userAnswerAsNumber = () => {
   const answer = readlineSync.question('Your answer: ');
-  return +answer;// add plus to try with it here
+  return +answer;//add plus to try with it here
+};
+export const userAnswerAsString = () => {
+  const answer = readlineSync.question('Your answer: ');
+  return answer;
 };

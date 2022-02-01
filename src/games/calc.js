@@ -2,7 +2,7 @@ import {
   cons, car, cdr,
 } from '@hexlet/pairs';
 import greeting from '../cli.js';
-import { randomNumber } from '../ultis.js';
+import { randomNumber, userAnswerAsNumber } from '../ultis.js';
 import playLogic from '../engine.js';
 
 const calcGame = () => {
@@ -13,20 +13,20 @@ const calcGame = () => {
     const pair = cons(randomNumber(), randomNumber());
     const multiply = () => {
       console.log(`Question: ${car(pair)} * ${cdr(pair)}`);
-      const question = car(pair) * cdr(pair);
-      return playLogic(question);
+      const answer = userAnswerAsNumber();
+      return playLogic(car(pair) * cdr(pair),answer);
     };
 
     const plus = () => {
       console.log(`Question: ${car(pair)} + ${cdr(pair)}`);
-      const question = car(pair) + cdr(pair);
-      return playLogic(question);
+      const answer = userAnswerAsNumber();
+      return playLogic(car(pair) + cdr(pair),answer);
     };
 
     const minus = () => {
       console.log(`Question: ${car(pair)} - ${cdr(pair)}`);
-      const question = car(pair) - cdr(pair);
-      return playLogic(question);
+      const answer = userAnswerAsNumber();
+      return playLogic(car(pair) - cdr(pair),answer);
     };
 
     function getRndInteg(min, max) {
