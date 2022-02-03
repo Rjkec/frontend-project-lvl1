@@ -4,7 +4,7 @@ import {
 import greeting from '../cli.js';
 import playLogic from '../engine.js';
 import {
-  randomNumber, userAnswerAsNumber, //FIRST CHANGE OF THS FILE
+  randomNumber, userAnswerAsNumber, // FIRST CHANGE OF THS FILE
 } from '../ultis.js';
 
 const gcdGame = () => {
@@ -27,7 +27,7 @@ const gcdGame = () => {
 
       return a;
     };
-    return playLogic(egcd(car(pair),cdr(pair)),answer)
+    return playLogic(egcd(car(pair), cdr(pair)), answer);
   };
 
   let i = 0;

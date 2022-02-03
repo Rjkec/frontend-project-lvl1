@@ -1,6 +1,7 @@
 import greeting from '../cli.js';
+import playLogic from '../engine.js';
 import {
-  randomNumber, userAnswer,
+  randomNumber, userAnswerAsString,
 } from '../ultis.js';
 
 const primeGame = () => {
@@ -10,28 +11,28 @@ const primeGame = () => {
   const brainPrime = () => {
     const number = randomNumber();
     console.log(`Question: ${number}`);
-    const answer = userAnswer();
+    const answer = userAnswerAsString();
 
     const isPrime = (num) => {
       if (num === 1) {
-        return false;
+        return 'yes';
       }
       /* eslint-disable no-plusplus */
-      for (let i = 2; i < num; i++) if (num % i === 0) return false;
-      return true;
+      for (let i = 2; i < num; i++) if (num % i === 0) return 'no';
+      return 'yes';
     };
-
-    if (isPrime(number) === true) {
-      if (answer === 'yes') {
-        console.log('Correct!');
-        return true;
-      }
-      if (answer === 'no') {
-        console.log('no is wrong answer ;(. Correct answer was yes');
-        console.log(`Let's try again, ${name}!`);
-        return false;
-      }
-    }
+    return playLogic(isPrime(number),answer);
+    // if (isPrime(number) === true) {
+    //   if (answer === 'yes') {
+    //     console.log('Correct!');
+    //     return true;
+    //   }
+    //   if (answer === 'no') {
+    //     console.log('no is wrong answer ;(. Correct answer was yes');
+    //     console.log(`Let's try again, ${name}!`);
+    //     return false;
+    //   }
+    //}
 
     if (isPrime(number) === false) {
       if (answer === 'yes') {

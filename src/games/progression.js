@@ -1,6 +1,7 @@
 import greeting from '../cli.js';
+import playLogic from '../engine.js';
 import {
-  randomNumber, userAnswer,
+  randomNumber, userAnswerAsNumber,
 } from '../ultis.js';
 
 const progressionGame = () => {
@@ -27,19 +28,20 @@ const progressionGame = () => {
     progression[randomNum] = '..';
 
     console.log(`Question: ${progression.join(' ')}`);
-    const answer = +userAnswer();
+    const answer = userAnswerAsNumber();
+    return playLogic(saveProgression,answer);
 
-    if (answer === saveProgression) {
-      console.log('Correct!');
-      return true;
-    }
+    // if (answer === saveProgression) {
+    //   console.log('Correct!');
+    //   return true;
+    // }
 
-    if (answer !== saveProgression) {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${saveProgression}`);
-      console.log(`Let's try again, ${name}!`);
-      return false;
-    }
-    return null; // ADD THIS JUST TO FIX LINTER
+    // if (answer !== saveProgression) {
+    //   console.log(`${answer} is wrong answer ;(. Correct answer was ${saveProgression}`);
+    //   console.log(`Let's try again, ${name}!`);
+    //   return false;
+    // }
+    // return null; // ADD THIS JUST TO FIX LINTER
   };
   let i = 0;
   while (i < 3) {
