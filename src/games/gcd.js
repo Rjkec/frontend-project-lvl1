@@ -2,8 +2,9 @@ import {
   cons, car, cdr,
 } from '@hexlet/pairs';
 import greeting from '../cli.js';
+import playLogic from '../engine.js';
 import {
-  randomNumber, userAnswerAsNumber,
+  randomNumber, userAnswerAsNumber, //FIRST CHANGE OF THS FILE
 } from '../ultis.js';
 
 const gcdGame = () => {
@@ -14,7 +15,6 @@ const gcdGame = () => {
     const pair = cons(randomNumber(), randomNumber());
     console.log(`Question: ${car(pair)} ${cdr(pair)}`);
     const answer = userAnswerAsNumber();
-
     const egcd = (a, b) => {
       if (a === 0) return b;
 
@@ -27,17 +27,7 @@ const gcdGame = () => {
 
       return a;
     };
-
-    if (egcd(car(pair), cdr(pair)) === answer) {
-      console.log('Correct!');
-      return true;
-    }
-    if (egcd(car(pair), cdr(pair)) !== answer) {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${egcd(car(pair), cdr(pair))}`);
-      console.log(`Let's try again, ${name}!`);
-      return false;
-    }
-    return null; // ADD THIS JUST TO FIX LINTER
+    return playLogic(egcd(car(pair),cdr(pair)),answer)
   };
 
   let i = 0;
