@@ -4,7 +4,7 @@ const playLogic = (qestion, answer, name) => {
     return true;
   }
   console.log(`${answer} is wrong answer ;(. Correct answer was ${qestion}`);
-  console.log(`let's try again, ${name}!`); 
+  console.log(`Let's try again, ${name}!`); 
   return false;
 
 };
