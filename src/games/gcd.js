@@ -27,7 +27,7 @@ const gcdGame = () => {
 
       return a;
     };
-    return playLogic(egcd(car(pair), cdr(pair)), answer);
+    return playLogic(egcd(car(pair), cdr(pair)), answer, name);
   };
 
   let i = 0;

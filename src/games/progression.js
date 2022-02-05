@@ -29,7 +29,7 @@ const progressionGame = () => {
 
     console.log(`Question: ${progression.join(' ')}`);
     const answer = userAnswerAsNumber();
-    return playLogic(saveProgression, answer);
+    return playLogic(saveProgression, answer, name);
 
     // if (answer === saveProgression) {
     //   console.log('Correct!');

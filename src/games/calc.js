@@ -14,7 +14,7 @@ const calcGame = () => {
     const multiply = () => {
       console.log(`Question: ${car(pair)} * ${cdr(pair)}`);
       const answer = userAnswerAsNumber();
-      return playLogic(car(pair) * cdr(pair), answer);
+      return playLogic(car(pair) * cdr(pair), answer, name);
     };
 
     const plus = () => {

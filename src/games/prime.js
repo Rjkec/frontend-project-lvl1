@@ -21,7 +21,7 @@ const primeGame = () => {
       for (let i = 2; i < num; i++) if (num % i === 0) return 'no';
       return 'yes';
     };
-    return playLogic(isPrime(number), answer);
+    return playLogic(isPrime(number), answer, name);
     // if (isPrime(number) === true) {
     //   if (answer === 'yes') {
     //     console.log('Correct!');
