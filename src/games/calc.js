@@ -20,13 +20,13 @@ const calcGame = () => {
     const plus = () => {
       console.log(`Question: ${car(pair)} + ${cdr(pair)}`);
       const answer = userAnswerAsNumber();
-      return playLogic(car(pair) + cdr(pair), answer);
+      return playLogic(car(pair) + cdr(pair), answer, name);
     };
 
     const minus = () => {
       console.log(`Question: ${car(pair)} - ${cdr(pair)}`);
       const answer = userAnswerAsNumber();
-      return playLogic(car(pair) - cdr(pair), answer);
+      return playLogic(car(pair) - cdr(pair), answer, name);
     };
 
     function getRndInteg(min, max) {
