@@ -1,4 +1,4 @@
-import greeting from '../cli.js';
+import greeting from '../cli.js'; 
 import playLogic from '../engine.js';
 import { userQuestion, userAnswerAsString } from '../ultis.js';
 
@@ -8,7 +8,7 @@ const evenGame = () => {
   const brainEven = () => {
     const number = userQuestion();
     const answer = userAnswerAsString();
-    return playLogic(number % 2 === 0 ? 'yes' : 'no', answer); // add new solution
+    return playLogic(number % 2 === 0 ? 'yes' : 'no', answer, name); // add new solution
   };
 
   let i = 0;
@@ -32,4 +32,5 @@ const evenGame = () => {
     }
   }
 };
+
 export default evenGame;
