@@ -1,12 +1,13 @@
 import greeting from '../cli.js';
 import playLogic from '../engine.js';
-import { userQuestion, userAnswerAsString } from '../ultis.js';
+import {userAnswerAsString, randomNumber } from '../ultis.js';
 
 const evenGame = () => {
   const name = greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const brainEven = () => {
-    const number = userQuestion();
+    let number = randomNumber();
+    console.log(`Question: ${number}`);
     const answer = userAnswerAsString();
     return playLogic(number % 2 === 0 ? 'yes' : 'no', answer, name); // add new solution
   };

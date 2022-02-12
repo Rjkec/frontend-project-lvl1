@@ -9,12 +9,6 @@ export const randomNumber = () => {
   return number;
 };
 
-export const userQuestion = () => {
-  const number = randomNumber();
-  const question = `Question: ${number}`;
-  console.log(question);
-  return number;
-};
 export const userAnswerAsNumber = () => {
   const answer = readlineSync.question('Your answer: ');
   return +answer;// add plus to try with it here
