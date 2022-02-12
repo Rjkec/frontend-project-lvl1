@@ -1,4 +1,4 @@
-import greeting from '../cli.js'; 
+import greeting from '../cli.js';
 import playLogic from '../engine.js';
 import { userQuestion, userAnswerAsString } from '../ultis.js';
 
