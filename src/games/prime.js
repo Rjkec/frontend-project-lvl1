@@ -15,7 +15,7 @@ const primeGame = () => {
 
     const isPrime = (num) => {
       if (num === 1) {
-        return 'yes';
+        return 'no';
       }
       /* eslint-disable no-plusplus */
       for (let i = 2; i < num; i++) if (num % i === 0) return 'no';
