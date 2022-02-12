@@ -21,31 +21,31 @@ const primeGame = () => {
       for (let i = 2; i < num; i++) if (num % i === 0) return 'no';
       return 'yes';
     };
-    // return playLogic(isPrime(number), answer, name);
-    if (isPrime(number) === true) {
-      if (answer === 'yes') {
-        console.log('Correct!');
-        return true;
-      }
-      if (answer === 'no') {
-        console.log('no is wrong answer ;(. Correct answer was yes');
-        console.log(`Let's try again, ${name}!`);
-        return false;
-      }
-    }
+    return playLogic(isPrime(number), answer, name);
+    // if (isPrime(number) === true) {
+    //   if (answer === 'yes') {
+    //     console.log('Correct!');
+    //     return true;
+    //   }
+    //   if (answer === 'no') {
+    //     console.log('no is wrong answer ;(. Correct answer was yes');
+    //     console.log(`Let's try again, ${name}!`);
+    //     return false;
+    //   }
+    // }
 
-    if (isPrime(number) === false) {
-      if (answer === 'yes') {
-        console.log('yes is wrong answer ;(. Correct answer was no');
-        console.log(`Let's try again, ${name}!`);
-        return false;
-      }
-      if (answer === 'no') {
-        console.log('Correct!');
-        return true;
-      }
-    }
-    return null; // ADD THIS JUST TO FIX LINTER
+  //   if (isPrime(number) === false) {
+  //     if (answer === 'yes') {
+  //       console.log('yes is wrong answer ;(. Correct answer was no');
+  //       console.log(`Let's try again, ${name}!`);
+  //       return false;
+  //     }
+  //     if (answer === 'no') {
+  //       console.log('Correct!');
+  //       return true;
+  //     }
+  //   }
+  //   return null; // ADD THIS JUST TO FIX LINTER
   };
 
   let i = 0;
