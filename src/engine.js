@@ -1,22 +1,25 @@
-import { userAnswerAsNumber } from "./ultis.js";
+import readlineSync from 'readline-sync';
 
-const playLogic = (answerMassive,name) => {
+console.log('Welcome to the Brain Games!');
+const userName = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${userName}!`);
 
-  for (let i = 0; i < answerMassive.length; i++) {
-    console.log (`Question: ${answerMassive[i][0]}`);
-    const answer = userAnswerAsNumber();
-    if (Number(answerMassive[i][1]) === answer) {
+
+const roundsCount = 3;
+const playLogic = (rounds) => {
+  for (let i = 0; i < roundsCount; i++) {
+    const [question, answer] = rounds[i];
+    console.log (`Question: ${question}`);
+    const answerOfUser = readlineSync.question('Your answer: ');
+    if (answer === Number(answerOfUser)) {
       console.log('Correct!');
     } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${answerMassive[i][1]}`);
-      console.log(`Let's try again, ${name}!`)
+      console.log(`${answerOfUser} is wrong answer ;(. Correct answer was ${rounds[i][1]}`);
+      console.log(`Let's try again, ${userName}!`)
       return 
     }
-    if (i === answerMassive.length-1 && Number(answerMassive[i][1]) === answer) {
-      console.log(`Congratulations, ${name}!`);
-      break;
-    } 
   }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default playLogic;

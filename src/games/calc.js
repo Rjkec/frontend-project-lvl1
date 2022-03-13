@@ -1,12 +1,12 @@
 import {
   cons, car, cdr,
 } from '@hexlet/pairs';
-import greeting from '../cli.js';
-import { randomNumber, userAnswerAsNumber } from '../ultis.js';
+//import greeting from '../cli.js';
+import { randomNumber } from '../ultis.js';
 import playLogic from '../engine.js';
 
 const calcGame = () => {
-  const name = greeting();
+  //const name = greeting();
   console.log('What is the result of the expression?');
   const brainCalc = () => {
     const multiply = () => {
@@ -15,7 +15,7 @@ const calcGame = () => {
         const pair = cons(randomNumber(), randomNumber());
         multiplyMassive.push([`${car(pair)} * ${cdr(pair)}`,car(pair) * cdr(pair)]);
       }
-      return playLogic(multiplyMassive,name);
+      return playLogic(multiplyMassive);
     }; 
 
     const plus = () => {
@@ -24,7 +24,7 @@ const calcGame = () => {
         const pair = cons(randomNumber(), randomNumber());
         plusMassive.push([`${car(pair)} + ${cdr(pair)}`,car(pair) + cdr(pair)]);
       }
-      return playLogic(plusMassive,name);
+      return playLogic(plusMassive);
     };
 
     const minus = () => {
@@ -33,7 +33,7 @@ const calcGame = () => {
         const pair = cons(randomNumber(), randomNumber());
         minusMassive.push([`${car(pair)} - ${cdr(pair)}`,car(pair) - cdr(pair)]);
       }
-      return playLogic(minusMassive,name);
+      return playLogic(minusMassive);
     };
     // const randomPickOperation = () => {
       function getRndInteg(min, max) {
