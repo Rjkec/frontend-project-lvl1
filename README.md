@@ -32,17 +32,17 @@ Before running the games do next actions:
 
 ## Games overviews:
 
-## Brain-even
+# Brain-even
 [![asciicast](https://asciinema.org/a/djp6R7SfibpmVMDvTXkSd9ZcE.svg)](https://asciinema.org/a/djp6R7SfibpmVMDvTXkSd9ZcE)
 
-## Brain-calc
+# Brain-calc
 [![asciicast](https://asciinema.org/a/Oq2YCPdYXkdJwPCt7V0ZENT8G.svg)](https://asciinema.org/a/Oq2YCPdYXkdJwPCt7V0ZENT8G)
 
-## Brain-gcd
+# Brain-gcd
 [![asciicast](https://asciinema.org/a/ANDTGodfHjQttZRz1ObEUzkus.svg)](https://asciinema.org/a/ANDTGodfHjQttZRz1ObEUzkus)
 
-## Brain-progression
+# Brain-progression
 [![asciicast](https://asciinema.org/a/JfpxpP5hbPMPVITssgv4xD4Vv.svg)](https://asciinema.org/a/JfpxpP5hbPMPVITssgv4xD4Vv)
 
-## Brain-prime
+# Brain-prime
 [![asciicast](https://asciinema.org/a/nGjVEvnxgkf7KgjwIff9Oz3gV.svg)](https://asciinema.org/a/nGjVEvnxgkf7KgjwIff9Oz3gV)
