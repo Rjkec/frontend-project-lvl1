@@ -19,6 +19,7 @@ Before running the games do next actions:
 4. Brain-gcd - calculate the greatest common divisor of 2 numbers
 5. Brain-prime - check a number for primality
 6. Brain-progression - calculate and enter missing number from progression
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Rjkec/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Rjkec/frontend-project-lvl1/actions)
 
@@ -27,6 +28,9 @@ Before running the games do next actions:
 
 ## Make lint 
 [![make lint](https://github.com/Rjkec/frontend-project-lvl1/actions/workflows/workflows.yml/badge.svg)](https://github.com/Rjkec/frontend-project-lvl1/actions/workflows/workflows.yml)
+
+
+## Games overviews:
 
 ## Brain-even
 [![asciicast](https://asciinema.org/a/djp6R7SfibpmVMDvTXkSd9ZcE.svg)](https://asciinema.org/a/djp6R7SfibpmVMDvTXkSd9ZcE)
