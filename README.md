@@ -8,7 +8,7 @@ Before running the games do next actions:
 - Install Node.js package: enter command line apt install nodejs
 - Upgrade Node.js to the latest version: enter command line apt upgrade nodejs
 - To allow you to install modules and packages with Node.js, install npm package: enter command line apt install npm
-- Clone this repository by SSH key: git@github.com:vlad1slove1/frontend-project-lvl1.git
+- Clone this repository by SSH key: https://github.com/Rjkec/frontend-project-lvl1
 - Add and check depencies: enter command line make install
 - Run games: enter command line make *game name*
 
