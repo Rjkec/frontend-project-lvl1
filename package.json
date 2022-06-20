@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/Rjkec/frontend-project-lvl1#readme",
   "dependencies": {
-    "@hexlet/pairs": "^1.1.1",
     "eslint-plugin-import": "^2.25.4",
     "jest": "^27.4.5",
     "lodash": "^4.17.21",

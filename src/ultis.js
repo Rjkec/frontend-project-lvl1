@@ -3,8 +3,7 @@ function getRandomInteger(min, max) {
 }
 
 export const randomNumber = () => {
-  const number = getRandomInteger(1, 10);
-  return number;
+  return getRandomInteger(1, 10);
 };
 
 
