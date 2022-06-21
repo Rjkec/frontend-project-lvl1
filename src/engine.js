@@ -9,9 +9,11 @@ const roundsCount = 3;
 const playLogic = (rounds) => {
   for (let i = 0; i < roundsCount; i++) {
     const [question, answer] = rounds[i];
+    // console.log('Trying to find mistake',rounds[i]);
     console.log (`Question: ${question}`);
     const answerOfUser = readlineSync.question('Your answer: ');
-    if (answer === Number(answerOfUser)) {
+    //change answer, delete number(answerOfUser)
+    if (answer === answerOfUser) {
       console.log('Correct!');
     } else {
       console.log(`${answerOfUser} is wrong answer ;(. Correct answer was ${rounds[i][1]}`);
